@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+
+<html lang="pt-BR"> 
+
+<head> 
+
+  <meta charset="UTF-8"> 
+
+  <title>Task & Tracker - Tailwind</title> 
+
+  <script src="https://cdn.tailwindcss.com"></script> 
+
+  <style> 
+
+    body { 
+
+      background-color: #F3F4F6; 
+
+      color: #374151; 
+
+    } 
+
+    .btn-primary { 
+
+      background-color: #1E3A8A; 
+
+    } 
+
+    .btn-success { 
+
+      background-color: #10B981; 
+
+    } 
+
+    .task-item, .habit-item { 
+
+      background-color: #E5E7EB; 
+
+    } 
+
+  </style> 
+
+</head> 
+
+<body class="min-h-screen flex items-center justify-center"> 
+
+  <div class="container mx-auto p-5 bg-white shadow-md rounded w-4/5"> 
+
+    <h1 class="text-3xl font-bold text-center text-primary mb-5">Task & Tracker</h1> 
+
+     
+
+    <div id="login-section" class="my-4"> 
+
+      <h3 class="text-xl text-center">Login</h3> 
+
+      <div class="flex justify-center mt-3"> 
+
+        <input type="text" id="username" class="border p-2 w-1/2" placeholder="Digite seu nome de usuário"> 
+
+        <button id="login-btn" class="ml-2 p-2 text-white rounded btn-primary">Entrar</button> 
+
+      </div> 
+
+    </div> 
+
+ 
+
+  <div id="app-section" class="hidden"> 
+
+      <h3 class="text-center text-xl">Bem-vindo, <span id="current-user" class="text-primary font-bold"></span>!</h3> 
+
+ 
+
+      <div class="flex flex-wrap -mx-3 mt-5"> 
+
+ 
+
+        <div class="w-full md:w-1/2 px-3"> 
+
+          <div class="bg-white rounded-lg shadow-lg p-5 mb-6"> 
+
+            <h4 class="text-center text-xl text-primary mb-4">Tarefas</h4> 
+
+            <div class="flex mb-3"> 
+
+              <input type="text" id="new-task" class="border p-2 w-full" placeholder="Nova tarefa"> 
+
+              <button id="add-task-btn" class="ml-2 p-2 text-white rounded btn-success">Adicionar</button> 
+
+            </div> 
+
+            <ul id="task-list" class="space-y-2 task-list"> 
+
+ 
+
+            </ul> 
+
+          </div> 
+
+        </div> 
+
+ 
+
+        <div class="w-full md:w-1/2 px-3"> 
+
+          <div class="bg-white rounded-lg shadow-lg p-5 mb-6"> 
+
+            <h4 class="text-center text-xl text-primary mb-4">Hábitos</h4> 
+
+            <div class="flex mb-3"> 
+
+              <input type="text" id="new-habit" class="border p-2 w-full" placeholder="Novo hábito"> 
+
+              <button id="add-habit-btn" class="ml-2 p-2 text-white rounded btn-success">Adicionar</button> 
+
+            </div> 
+
+            <ul id="habit-list" class="space-y-2 habit-list"> 
+
+ 
+
+            </ul> 
+
+          </div> 
+
+        </div> 
+
+      </div> 
+
+ 
+
+      <div class="text-center mt-6"> 
+
+        <button id="logout-btn" class="bg-red-500 p-2 text-white rounded hover:bg-red-600">Sair</button> 
+
+      </div> 
+
+    </div> 
+
+  </div> 
+
+ 
+
+  <script src="app_tailwind.js"></script> 
+
+</body> 
+
+</html> 
+
+ 
+
+ 
